@@ -7,13 +7,16 @@ stock_prices = {
     "AAPL": 180,
     "TSLA": 250,
     "GOOGL": 170,
-    "MSFT": 420
+    "MSFT": 420,
+    "AMZN": 130,
+    "META":300,
+    "TCS": 200
 }
 # Dictionary to store portfolio records
 portfolio = {}
 # Input stock details
 while True:
-    stock_name = input("Enter stock name (AAPL/TSLA/GOOGL/MSFT): ")
+    stock_name = input("Enter stock name (AAPL/TSLA/GOOGL/MSFT/AMZN/META/TCS): ")
     stock_name = stock_name.upper()
     if stock_name not in stock_prices:
         print("Stock not available. Please try again.")
